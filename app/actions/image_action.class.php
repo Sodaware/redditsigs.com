@@ -25,12 +25,18 @@ class ImageAction extends HagfishAction
 	{
 		// Get inputs
 		$username 	= $request->getParameter('username');
-		$theme		= $request->getParameter('style', 'dark');
+		$theme		= strtolower($request->getParameter('style', 'dark'));
 		
 		// Check a username was submitted 
 		if (!$username) {
 			echo "no username submitted";
 			return;
+		}
+		
+		// Check theme is valid. If not, default to "dark"
+		$validThemes = array('dark', 'light');
+		if (!in_array($theme, $validThemes)) {
+			$theme = 'dark';
 		}
 		
 		// Check for cached image

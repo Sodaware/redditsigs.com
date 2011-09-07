@@ -66,7 +66,7 @@
 
 	<footer>
 		<p>Reddit is a trademark of reddit Inc &middot; redditsigs.com is not affiliated with reddit.com &middot; <a href="http://store.xkcd.com/reddit/#8bitredditalientshirt">8-bit alien</a></p>
-		<p>Code by <a href="http://www.reddit.com/user/sodaware">sodaware</a> &middot; <a href="http://twitter.com/sodaware">twitter.com/sodaware</a></p>
+		<p>Code by <a href="http://www.reddit.com/user/sodaware">sodaware</a> (<a href="http://twitter.com/sodaware">@sodaware</a>) &middot; <a href="http://sodaware.github.com/redditsigs.html">Info &amp; Source</a></p>
 	</footer>
 	
 </div>
