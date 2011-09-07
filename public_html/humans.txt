@@ -1,0 +1,14 @@
+/* TEAM */
+	Author: 		Phil Newton
+	Contact: 		phil [at] sodaware.net
+	Twitter: 		@sodaware
+	From:			Raleigh, North Carolina, USA
+
+/* SITE */
+	Language:		English
+	Doctype:		HTML 5
+	Tools:			PHP
+	IDE:			Netbeans
+	More:           http://www.sodaware.net/blog/
+
+/* http://humanstxt.org/ */

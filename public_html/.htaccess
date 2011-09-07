@@ -1,0 +1,29 @@
+# php_value output_buffering on
+# php_flag zlib.output_compression on
+# php_value zlib.output_compression_level 5
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+#	Header set Cache-Control "max-age=1209600, public"
+</FilesMatch>
+
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	# -- Redirect to www.craftroulette.com
+	RewriteCond %{HTTP_HOST} ^craftroulette.com
+	RewriteRule (.*) http://www.craftroulette.com/$1 [R=301,L]
+
+	# -- Affiliate Stuff
+	Redirect 301 /500-scrapbooking-sketches 				http://0949cj3yfjqifw5vcx2nam3rc7.hop.clickbank.net/?tid=CR
+	Redirect 301 /craft-show-success-secrets				http://0b100k06qtkgsw2ax0ifyc1qvi.hop.clickbank.net/?tid=CR
+	Redirect 301 /how-to-start-your-own-craft-business 		http://8c50bepzqvgnml57x5hhdyyq71.hop.clickbank.net/?tid=CR
+	Redirect 301 /206-patchwork-quilt-patterns				http://4e436k2ydkhfik6zrfsa63ee8b.hop.clickbank.net/?tid=CR
+	Redirect 301 /start-your-own-jewelry-party-business		http://01eb1n1ajhidqwaayotjp5s34v.hop.clickbank.net/?tid=CR
+
+	# -- AJAX calls	/ custom pages
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php [QSA,L]	
+
+</IfModule>

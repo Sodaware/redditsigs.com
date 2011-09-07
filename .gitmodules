@@ -1,0 +1,3 @@
+[submodule "vendor/hagfish"]
+	path = vendor/hagfish
+	url = git@github.com:Sodaware/hagfish.git
