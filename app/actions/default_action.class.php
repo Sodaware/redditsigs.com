@@ -3,7 +3,12 @@
  * app/actions/default_action.class.php
  * 
  * The default action for RedditSigs.com. Nothing fancy, but handles the main
- * form.
+ * form and generates the ASCII signature.
+ * 
+ * @author     Phil Newton <phil@sodaware.net>
+ * @copyright  2011 Phil Newton <phil@sodaware.net>
+ * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License
+ * @since      File available since Release 1.0.0
  */
 
 
